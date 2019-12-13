@@ -11,7 +11,7 @@ class PushViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
     """
-    queryset = Push.objects.all().order_by('-date_created')
+    queryset = Push.objects.all().order_by('-when')
     serializer_class = PushSerializer
 
 
