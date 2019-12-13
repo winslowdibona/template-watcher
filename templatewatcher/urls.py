@@ -25,7 +25,6 @@ router.register(r'pushes', views.PushViewSet)
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("db/", views.db, name="db"),
     path("admin/", admin.site.urls),
     url(r'^', include(router.urls)),
 ]
