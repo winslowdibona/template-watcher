@@ -2,6 +2,8 @@ from django.urls import path, include
 
 from django.contrib import admin
 
+from rest_framework.routers import DefaultRouter
+
 admin.autodiscover()
 
 from watcher import views
