@@ -20,8 +20,8 @@ router.register(r'pushes', views.PushViewSet)
 # Learn more here: https://docs.djangoproject.com/en/2.1/topics/http/urls/
 
 urlpatterns = [
-    path("", watcher.views.index, name="index"),
-    path("db/", watcher.views.db, name="db"),
+    path("", views.index, name="index"),
+    path("db/", views.db, name="db"),
     path("admin/", admin.site.urls),
     url(r'^', include(router.urls)),
 ]
