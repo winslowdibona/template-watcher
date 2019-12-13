@@ -27,7 +27,8 @@ SECRET_KEY = "CHANGE_ME!!!! (P.S. the SECRET_KEY environment variable will be us
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'template-watcher.herokuapp.com'
+    'template-watcher.herokuapp.com',
+    '0.0.0.0'
 ]
 
 
